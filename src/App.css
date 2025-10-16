@@ -1,0 +1,68 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.github-data {
+  padding: 1rem;
+  background-color: var(--background);
+  border-radius: 0.8rem;
+  color: var(--green);
+}
+
+.search-group {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 0.4rem;
+}
+
+.search-group {
+  & input,
+  button {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+  }
+}
+
+.search-group input {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.search-group button {
+  background-color: var(--purple);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: stretch;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.search-group button:disabled {
+  background-color: var(--selection);
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-left-color: var(--green);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 4px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

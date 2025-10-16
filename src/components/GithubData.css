@@ -1,0 +1,26 @@
+.github__main-info {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.github__main-info h2 {
+  margin: 0;
+  color: white;
+}
+
+.github__main-info img {
+  border-radius: 1rem;
+  width: 200px;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  margin-top: 1rem;
+}
+
+.social-media a {
+  color: var(--purple);
+}
